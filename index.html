@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gold Calculator</title>
+</head>
+<body>
+    <!--Created navbar using this-->
+    <div Id="nav">
+        <div class="logo">Gold Calculator</div>
+        <div><marquee behavior="" direction="">Hi Welcome <span style="color: red;">!!!</span></marquee></div>
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gold Prices</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Create gold price -->
+<div class="cur_price_center">
+    <div class="cur_price"><h6>...Live Gold Price...</h6><bold>Rs.</bold><strong id="gprice" value="4546">4546</strong><sub>per </sub>Gram</div>
+    <div></div>
+</div>
+    <!--Create forms and values-->
+<div Id="flex">
+    <div class="form_container">
+            <label class="label_style" for="gweight">1. Enter The Gold Weight:</label><br>
+            <input type="text" name="gweight" id="gweight" >
+            <label class="label_style" for="gwastage">2. Enter The Gold Wastage % per Gram:</label><br>
+            <input type="text" name="gwastage" id="gwastage">
+            <label class="label_style" for="ggst">3. Enter The GST %:</label><br>
+            <input type="text" name="ggst" id="ggst">
+            <label class="label_style" for="gmaking">4. Enter The Making Charge per Gram:</label><br>
+            <input type="text" name="gmaking" id="gmaking">
+    </div>
+    <div class="gsubmit">
+        <button onclick="goldValue()">||Calculate||</button>
+        <button onclick="clear()">Clear</button>
+    </div>
+    <div class="gapproximate">
+        <h1>Approximate Price (in INR)</h1>
+        <h2 id="update">Calculate Here...</h2>
+    </div>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>
+
